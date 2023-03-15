@@ -1,0 +1,224 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+}
+
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-fluid{
+/*	border: 1px solid black;*/
+	text-align: center;
+	background: #444;
+	padding: 0;
+	color: #ccc;
+	letter-spacing: 0.6px;
+}
+
+
+.container-fluid h1{
+/*	border: 1px solid black;*/
+	color: orangered;
+	font-size: 50px;
+	padding: 0;
+
+}
+
+.container-fluid h1 a{
+	text-decoration: none;
+	color: orangered;
+}
+
+.container-fluid p a{
+	text-decoration: none;
+	color: inherit;
+/*	font-size: 16px;*/
+	color: #ddd;
+/*	vertical-align: middle;*/
+}
+
+.container-fluid p a i{
+	font-size: 10px;
+}
+
+.container-fluid p a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.wrapper{
+/*		border: 1px solid black;*/
+	width: 100%;
+	height: auto;
+	margin-top: 2rem;
+	background: transparent;
+	padding: 1rem 1rem;
+}
+
+
+.owl-carousel{
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	margin-top: 0rem;
+	padding: 40px 0;
+}
+
+
+.owl-theme .owl-nav{
+	width: 90%;
+	margin: auto;
+	border: none;
+	outline: none;
+/*	border: 1px solid black;*/
+	margin-top: 5px;
+	color: #fff;
+	padding: 0 !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.owl-theme .owl-nav button span{
+/*		border: 1px solid black;*/
+	display: block;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.owl-theme .owl-nav button.owl-prev span i, .owl-theme .owl-nav button.owl-next span i{
+	font-size: 28px;
+	color: royalblue;
+	display: inline-block;
+}
+
+
+.owl-theme .owl-nav button span i:hover{
+	color: darkblue;
+}
+
+
+.owl-theme .owl-nav [class*='owl-']{
+	background: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	transition: 0.3s ease;
+}
+
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+	background: none;
+	outline: none;
+	border: none;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+
+.owl-theme .owl-dots{
+/*		border: 1px solid red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 !important;
+}
+
+
+.owl-theme .owl-dots button.owl-dot{
+	background: none;
+	outline: none;
+	border: none;
+/*	border: 1px solid red;*/
+/*	background-color: red;*/
+}
+
+
+.owl-theme .owl-dots button.owl-dot.active{
+	border: none;
+	outline: none;
+	background: transparent;
+/*	border: 1px solid red;*/
+}
+
+.owl-theme .owl-dots button.owl-dot span{
+/*	border: 1px solid black;*/
+	background-color: royalblue;
+}
+
+
+.owl-theme .owl-dots button.owl-dot.active span{
+	width: 20px !important;
+	background: darkblue;
+}
+
+
+.owl-theme .owl-dots .owl-dot:hover span{
+	background-color: darkblue;
+}
+
+
+.owl-carousel .owl-stage-outer{
+/*		border: 1px solid black;*/
+	padding: 5px 0;
+}
+
+
+.wrapper .owl-carousel .item{
+/*		border: 1px solid white;*/
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 0px 4px #333;
+}
+
+.wrapper .owl-carousel .item:hover{
+	cursor: pointer;
+}
+
+footer.container-fluid{
+	margin-top: auto;
+/*	border: 1px solid red;*/
+	background: #222;
+/*	padding-bottom: 0px !important;*/
+/*	padding-top: 10px;*/
+	padding: 5px 0 !important;
+	color: #aaa;
+}
+
+footer.container-fluid > * {
+/*	border: 1px solid red;*/
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+/*============================
+	CSS Media Queries
+============================*/
+@media only screen and (min-width: 0px) and (max-width: 576px){
+	
+	div.container-fluid h1{
+		font-size: 30px;
+	}
+
+	div.container-fluid p{
+/*		border: 1px solid white;*/
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+}
